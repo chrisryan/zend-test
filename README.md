@@ -11,7 +11,7 @@ This package is a part of the Zend Framework 1. Each component was separated and
 ## Installation
 
 ```
-composer require zf1s/zend-test
+composer require namesco/zend-test
 ```
 
 ## Resources
