@@ -224,7 +224,7 @@ class Zend_Test_PHPUnit_Constraint_DomQuery41 extends PHPUnit_Framework_Constrai
      * NOTE 2:
      * Interface changed again in PHPUnit 4.1.0 because of refactoring to SebastianBergmann\Comparator
      */
-    public function fail($other, $description, \SebastianBergmann\Comparator\ComparisonFailure $cannot_be_used = NULL)
+    public function fail($other, $description, \SebastianBergmann\Comparator\ComparisonFailure $cannot_be_used = NULL): void
     {
         // require_once 'Zend/Test/PHPUnit/Constraint/Exception.php';
         switch ($this->_assertType) {
@@ -279,7 +279,7 @@ class Zend_Test_PHPUnit_Constraint_DomQuery41 extends PHPUnit_Framework_Constrai
      *
      * @return string
      */
-    public function toString()
+    public function toString(): string
     {
         return '';
     }

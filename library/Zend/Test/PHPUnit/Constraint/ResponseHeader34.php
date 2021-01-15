@@ -189,7 +189,7 @@ class Zend_Test_PHPUnit_Constraint_ResponseHeader34 extends PHPUnit_Framework_Co
      * @return void
      * @throws PHPUnit_Framework_ExpectationFailedException
      */
-    public function fail($other, $description, $not = false)
+    public function fail($other, $description, $not = false): void
     {
         // require_once 'Zend/Test/PHPUnit/Constraint/Exception.php';
         switch ($this->_assertType) {
@@ -240,7 +240,7 @@ class Zend_Test_PHPUnit_Constraint_ResponseHeader34 extends PHPUnit_Framework_Co
      *
      * @return string
      */
-    public function toString()
+    public function toString(): string
     {
         return '';
     }
