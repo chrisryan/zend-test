@@ -62,7 +62,7 @@ class Zend_Test_PHPUnit_Constraint_ResponseHeader41 extends PHPUnit_Framework_Co
      * @var int Response code
      */
     protected $_code              = 200;
-    
+
     /**
      * @var int Actual response code
      */
@@ -119,7 +119,7 @@ class Zend_Test_PHPUnit_Constraint_ResponseHeader41 extends PHPUnit_Framework_Co
      *     public function evaluate($other, $description = '', $returnResult = FALSE)
      * We use the new interface for PHP-strict checking, but emulate the old one
      */
-    public function evaluate($response, $assertType = '', $variable = FALSE)
+    public function evaluate($response, $assertType = '', $variable = FALSE): ?bool
     {
         if (!$response instanceof Zend_Controller_Response_Abstract) {
             // require_once 'Zend/Test/PHPUnit/Constraint/Exception.php';
