@@ -26,14 +26,14 @@
 /**
  * Zend_Dom_Query-based PHPUnit Constraint
  *
- * @uses       PHPUnit_Framework_Constraint
+ * @uses       \PHPUnit\Framework\Constraint
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-class Zend_Test_PHPUnit_Constraint_DomQuery41 extends PHPUnit_Framework_Constraint
+class Zend_Test_PHPUnit_Constraint_DomQuery41 extends \PHPUnit\Framework\Constraint
 {
     /**#@+
      * Assertion type constants
@@ -136,7 +136,7 @@ class Zend_Test_PHPUnit_Constraint_DomQuery41 extends PHPUnit_Framework_Constrai
      * @param  null|string  Assertion type
      * @param  string       (optional) String to match (needle), may be required depending on assertion type
      * @return bool
-     * 
+     *
      * NOTE:
      * Drastic changes up to PHPUnit 3.5.15 this was:
      *     public function evaluate($other, $assertType = null)
@@ -209,17 +209,17 @@ class Zend_Test_PHPUnit_Constraint_DomQuery41 extends PHPUnit_Framework_Constrai
     /**
      * Report Failure
      *
-     * @see    PHPUnit_Framework_Constraint for implementation details
+     * @see    \PHPUnit\Framework\Constraint for implementation details
      * @param  mixed    CSS selector path
      * @param  string   Failure description
      * @param  object   Cannot be used, null
      * @return void
-     * @throws PHPUnit_Framework_ExpectationFailedException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
      * NOTE:
      * Drastic changes up to PHPUnit 3.5.15 this was:
      *     public function fail($other, $description, $not = false)
      * In PHPUnit 3.6.0 they changed the interface into this:
-     *     protected function fail($other, $description, PHPUnit_Framework_ComparisonFailure $comparisonFailure = NULL)
+     *     protected function fail($other, $description, \PHPUnit\Framework\ComparisonFailure $comparisonFailure = NULL)
      * We use the new interface for PHP-strict checking
      * NOTE 2:
      * Interface changed again in PHPUnit 4.1.0 because of refactoring to SebastianBergmann\Comparator

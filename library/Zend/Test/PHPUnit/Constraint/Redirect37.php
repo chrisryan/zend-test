@@ -23,14 +23,14 @@
 /**
  * Redirection constraints
  *
- * @uses       PHPUnit_Framework_Constraint
+ * @uses       \PHPUnit\Framework\Constraint
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-class Zend_Test_PHPUnit_Constraint_Redirect37 extends PHPUnit_Framework_Constraint
+class Zend_Test_PHPUnit_Constraint_Redirect37 extends \PHPUnit\Framework\Constraint
 {
     /**#@+
      * Assertion type constants
@@ -61,7 +61,7 @@ class Zend_Test_PHPUnit_Constraint_Redirect37 extends PHPUnit_Framework_Constrai
      * @var string
      */
     protected $_match             = null;
-    
+
     /**
      * What is actual redirect
      */
@@ -163,20 +163,20 @@ class Zend_Test_PHPUnit_Constraint_Redirect37 extends PHPUnit_Framework_Constrai
     /**
      * Report Failure
      *
-     * @see    PHPUnit_Framework_Constraint for implementation details
+     * @see    \PHPUnit\Framework\Constraint for implementation details
      * @param  mixed $other
      * @param  string $description Additional message to display
      * @param  bool $not
      * @return void
-     * @throws PHPUnit_Framework_ExpectationFailedException
+     * @throws \PHPUnit\Framework\ExpectationFailedException
      * NOTE:
      * Drastic changes up to PHPUnit 3.5.15 this was:
      *     public function fail($other, $description, $not = false)
      * In PHPUnit 3.6.0 they changed the interface into this:
-     *     protected function fail($other, $description, PHPUnit_Framework_ComparisonFailure $comparisonFailure = NULL)
+     *     protected function fail($other, $description, \PHPUnit\Framework\ComparisonFailure $comparisonFailure = NULL)
      * We use the new interface for PHP-strict checking
      */
-    public function fail($other, $description, PHPUnit_Framework_ComparisonFailure $cannot_be_used = NULL): void
+    public function fail($other, $description, \PHPUnit\Framework\ComparisonFailure $cannot_be_used = NULL): void
     {
         // require_once 'Zend/Test/PHPUnit/Constraint/Exception.php';
         switch ($this->_assertType) {
