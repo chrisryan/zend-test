@@ -5,7 +5,9 @@
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=7.2",
+		"misantron/dbunit": "^5.1.0",
+		"phpunit/phpunit": "@stable",
         "zf1s/zend-controller": "^1.13.4",
         "zf1s/zend-dom": "^1.13.4",
         "zf1s/zend-exception": "^1.13.4",

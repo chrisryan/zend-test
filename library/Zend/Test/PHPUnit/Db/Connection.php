@@ -60,7 +60,7 @@ class Zend_Test_PHPUnit_Db_Connection extends \PHPUnit\DbUnit\Database\DefaultCo
     /**
      * Metadata
      *
-     * @param \PHPUnit\DbUnit\Database\IMetaData $db
+     * @param \PHPUnit\DbUnit\Database\Metadata\Metadata $db
      */
     protected $_metaData;
 
@@ -112,7 +112,7 @@ class Zend_Test_PHPUnit_Db_Connection extends \PHPUnit\DbUnit\Database\DefaultCo
      * Returns a database metadata object that can be used to retrieve table
      * meta data from the database.
      *
-     * @return \PHPUnit\DbUnit\Database\IMetaData
+     * @return \PHPUnit\DbUnit\Database\Metadata\Metadata
      */
     public function getMetaData()
     {

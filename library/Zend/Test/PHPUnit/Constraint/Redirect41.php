@@ -23,14 +23,14 @@
 /**
  * Redirection constraints
  *
- * @uses       \PHPUnit\Framework\Constraint
+ * @uses       \PHPUnit\Framework\Constraint\Constraint
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-class Zend_Test_PHPUnit_Constraint_Redirect41 extends \PHPUnit\Framework\Constraint
+class Zend_Test_PHPUnit_Constraint_Redirect41 extends \PHPUnit\Framework\Constraint\Constraint
 {
     /**#@+
      * Assertion type constants
@@ -163,7 +163,7 @@ class Zend_Test_PHPUnit_Constraint_Redirect41 extends \PHPUnit\Framework\Constra
     /**
      * Report Failure
      *
-     * @see    \PHPUnit\Framework\Constraint for implementation details
+     * @see    \PHPUnit\Framework\Constraint\Constraint for implementation details
      * @param  mixed $other
      * @param  string $description Additional message to display
      * @param  bool $not

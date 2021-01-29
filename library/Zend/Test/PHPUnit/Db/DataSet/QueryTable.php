@@ -74,7 +74,7 @@ class Zend_Test_PHPUnit_Db_DataSet_QueryTable extends \PHPUnit\DbUnit\DataSet\Qu
             if(count($this->data) > 0) {
                 $keys = array_keys($this->data[0]);
             }
-            $this->tableMetaData = new \PHPUnit\DbUnit\DataSet\DefaultTableMetaData(
+            $this->tableMetaData = new \PHPUnit\DbUnit\DataSet\DefaultTableMetadata(
                 $this->tableName, $keys
             );
         }

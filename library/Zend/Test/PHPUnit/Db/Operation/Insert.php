@@ -28,14 +28,14 @@
 /**
  * Operation for Inserting on setup or teardown of a database tester.
  *
- * @uses       \PHPUnit\DbUnit\Operation\IDatabaseOperation
+ * @uses       \PHPUnit\DbUnit\Operation\Operation
  * @category   Zend
  * @package    Zend_Test
  * @subpackage PHPUnit
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-class Zend_Test_PHPUnit_Db_Operation_Insert implements \PHPUnit\DbUnit\Operation\IDatabaseOperation
+class Zend_Test_PHPUnit_Db_Operation_Insert implements \PHPUnit\DbUnit\Operation\Operation
 {
     /**
      * @param \PHPUnit\DbUnit\Database\Connection $connection
