@@ -1,13 +1,12 @@
 {
-    "name": "namesco/zend-test",
+    "name": "chrisryan/zend-test",
     "description": "Zend Framework 1 Test package",
     "keywords": ["framework", "zf1", "zend", "test"],
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
     "require": {
-        "php": ">=7.2",
-		"misantron/dbunit": "^5.1.0",
-		"phpunit/phpunit": "@stable",
+        "php": ">=7.0",
+        "phpunit/phpunit": "@stable",
         "zf1s/zend-controller": "^1.13.4",
         "zf1s/zend-dom": "^1.13.4",
         "zf1s/zend-exception": "^1.13.4",
